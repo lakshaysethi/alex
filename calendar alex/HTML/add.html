@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Add | PHP Calendar</title>
+
+    <!-- jQuery & Moment-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+
+    <!-- Bootstrap & Datepicker CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+
+    <!-- Bootstrap & Datepicker JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">My Calendar</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="add.html"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" action="">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="" placeholder="Select Year & Month" id="cal_select">
+                </div>
+                <button type="submit" class="btn btn-default">GO</button>
+            </form>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <h3>Add Schedule</h3>
+            <form class="form-horizontal" method="post">
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Start</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control custom-picker" name="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">End</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control custom-picker" name="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Task</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" name="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <button type="submit" class="btn btn-primary btn-block">SAVE</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function() {
+        $('.custom-picker').datetimepicker({
+            format: 'YYYY/MM/DD HH:mm'
+        });
+    });
+</script>
+</body>
+</html>

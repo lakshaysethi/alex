@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Detail | PHP Calendar</title>
+
+    <!-- jQuery & Moment-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+
+    <!-- Bootstrap & Datepicker CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+
+    <!-- Bootstrap & Datepicker JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">My Calendar</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="add.html"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" action="">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="" placeholder="Select Year & Month" id="cal_select">
+                </div>
+                <button type="submit" class="btn btn-default">GO</button>
+            </form>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <h3>April 12, 2017</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th style="width: 25%;"><span class="glyphicon glyphicon-time" aria-hidden="true"></span></th>
+                        <th>Task</th>
+                        <th style="width: 25%;"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10:00 ~ 10:45</td>
+                        <td>Meeting</td>
+                        <td><a href="edit.html">Edit</a>&nbsp;&nbsp;<a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>12:00 ~ 13:00</td>
+                        <td>Lunch</td>
+                        <td><a href="edit.html">Edit</a>&nbsp;&nbsp;<a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>18:00 ~ 20:00</td>
+                        <td>Dinner</td>
+                        <td><a href="edit.html">Edit</a>&nbsp;&nbsp;<a href="#">Delete</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
